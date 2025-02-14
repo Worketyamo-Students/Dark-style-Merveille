@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark style</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style type="text/tailwindcss">
+    @theme {       
+             --font-pop: "Poppins";
+             --color-jaune: #FFD49C; 
+             --color-violet: #7A87FB;
+             --color-page: #101111;
+             --color-noirn: #1C1C1C; 
+             --color-blanc: #FAFAFA;  
+             --color-gris: #878787;
+             --color-blanct: #FFFFFF;   
+        }  
+        </style>
+
+</head>
+
+<body class="flex flex-col  justify-between bg-page">
+  <header class="flex m-6 justify-between">
+    <div class="flex gap-[7.55px]">
+      <img src="./assets/img/logo.svg" alt="" class="w-[33px] h-[33px]">
+      <h1 class="font-400 text-pop text-[18.12px] text-blanct">znisa</h1>
+    </div>
+    <div class=" md:hidden flex    rounded-full p-[0.09rem] bg-gradient-to-r from-jaune to-violet -z-1 ">
+
+      <div class="border-1  bg-noirn z-2 rounded-full w-[48px] h-[32px] ">
+        <img src="./assets/img/menu.svg" alt="" class="  w-[40px] h-[32px] object-cover">
+      </div>
+    </div>
+    <!-- desktop -->
+    <div class=" hidden md:block bg-gradient-to-r from-jaune to-violet rounded-[290px] p-[0.09rem] z-1">
+
+      <div
+        class="  hidden md:block  md:flex justify-between w-[428px] p-6  items-center h-[48px] rounded-[290px] border-1  z-2 bg-black">
+        <div class="  W-[20px] h-[20px] bg-noirn">
+          <img src="./assets/img/Home Icom.svg" alt="" class="">
+        </div>
+        <h4 class="font-[400]  text-blanct text-[20px] font-pop">About</h4>
+        <h4 class="font-[400]  text-blant text-[20px]  text-blanct font-pop">Projects</h4>
+        <h4 class="font-[400] text-blant text-[20px]  text-blanct font-pop">Contact me</h4>
+      </div>
+    </div>
+
+    <div class=" hidden md:block md:flex  gap-[0.5px]">
+      <div
+        class=" flex w-[103px] h-[52px]  border-1 border-jaune   justify-center items-center bg-gradient-to-r from-violet to-jaune rounded-[40px]">
+        <h1>Hire me</h1>
+      </div>
+
+      <div
+        class=" flex w-[49px] h-[49px]  border-1  border-jaune justify-center items-center bg-gradient-to-r from-violet to-jaune rounded-full">
+        <img src="./assets/img/user.svg" alt="" class="w-[30px] h-[30px] object-cover">
+      </div>
+    </div>
+  </header>
+
+  <!-- <table class="table-auto w-full border-2 mt-32 border-white">
+    <tbody>
+      <tr>
+        <!-- Première cellule 
+        <td class="border border-white px-4 py-2">Cellule 1</td>
+  
+        <!-- Deuxième cellule divisée en 4 petites cellules 
+        <td class="border border-white px-4 py-2">
+          <div class="grid grid-cols-4 gap-0">
+            <div class="border border-white px-3 py-2">Cellule 2.1</div>
+            <div class="border border-white px-3 py-2">Cellule 2.2</div>
+            <div class="border border-white px-3 py-2">Cellule 2.3</div>
+            <div class="border border-white px-3 py-2">Cellule 2.4</div>
+          </div>
+        </td>
+  
+        <!-- Troisième cellule 
+        <td class="border border-white px-4 py-2">Cellule 3</td>
+      </tr>
+    </tbody>
+  </table>
+<!-- 
+  <table class="mt-16">
+    <tr>
+      <td class="border border-white px-4 py-2">cellule10</td>
+      <td class="border border-white px-0.1 py-2" >cellule10</td>
+      <td class="border border-white px-0.1 py-2">cellule10</td>
+      <td class="border border-white px-0.1 py-2">cellule10</td>
+      <td class="border border-white px-0.1 py-2" >cellule10</td>
+      <td class="border border-white px-4 py-2">cellule10</td>
+      
+    
+    
+    </tr> 
+    </table>
+  <table class="table-auto min-w-full border-2  border-white">
+    
+    <tbody>
+      <!-- Ligne 1 
+      <tr>
+        <td class="border border-white px-4 py-2">Cellule 1</td>
+        <td class="border border-white px-4 py-2" rowspan="3"><h1 class="text-xl text-white">shj</h1></td>
+        <td class="border border-white px-4 py-2">Cellule 3</td>
+      </tr>
+      <!-- Ligne 2 
+      <tr>
+        <td class="border border-white px-4 py-2">Cellule 4</td>
+        <td class="border border-white px-4 py-2">Cellule 5</td>
+      </tr>
+      <!-- Ligne 3 
+      <tr>
+        <td class="border border-white px-4 py-2">Cellule 6</td>
+        <td class="border border-white px-4 py-2">Cellule 7</td>
+      </tr>
+    
+    </tbody>
+    <tr>
+      <td class="border border-white px-4 py-2">cellule10</td>
+      <td class="border border-white px-4 py-2" >cellule10</td>
+      <td class="border border-white px-4 py-2">cellule10</td>
+     
+    </tr>
+    <tr>
+      <td class="border border-white px-4 py-2">cellule10</td>
+      <td class="border border-white px-4 py-2" >cellule10</td>
+      <td class="border border-white px-4 py-2">cellule10</td>
+
+    </tr>
+    <tr>
+      <td class="border border-white px-4 py-2">cellule10</td>
+      <td class="border border-white px-4 py-2" >cellule10</td>
+      <td class="border border-white px-4 py-2">cellule10</td>
+      
+    </tr>
+  </table>
+   -->
+  <!-- section3 -->
+  <section class=" flex flex-col mt-16   md:mt-32 gap-2 ">
+    <hr class="w-full h-0.5 bg-white ">
+    <div class="flex justify-between md:ml-28 md:mr-28  m-2">
+      <h1 class="text-[14px]  md:text-[20px] font-[400] text-blanct font-pop">Framer</h1>
+      <img src="./assets/img/etoile.svg" alt="">
+      <h1 class="text-[14px]  md:text-[20px] font-[400] text-blanct font-pop">Webflow</h1>
+      <img src="./assets/img/etoile.svg" alt="">
+      <h1 class="text-[14px]  md:text-[20px] font-[400] text-blanct font-pop">Figma</h1>
+      <img src="./assets/img/etoile.svg" alt="">
+      <h1 class=" hidden md:block text-[20px] font-[400] font-pop text-blanct">Notion</h1>
+      <img src="./assets/img/etoile.svg" alt="" class="hidden md:block">
+    </div>
+    <hr class="w-full h-0.5 bg-white ">
+
+  </section>
+  <!-- section4 -->
+  <section class=" flex flex-col ml-6 md:m-24 gap-6">
+    <div class="flex gap-4  mt-6 h-[35px] md:h-[57px] ">
+      <h1 class="font-[400] font-pop text-[18px] text-blanct md:text-[40px]">My process to design</h1>
+      <img src="./assets/img/flocons.svg">
+    </div>
+
+    <div class="flex gap-6">
+      <div class=" flex justify-center items-center w-[25px] h-[25px] rounded-full border-2 border-blanc">
+        <h1 class="text-blanct text-sm">1</h1>
+      </div>
+      <div class="flex flex-col gap-4">
+        <img src="./assets/img/cercle.svg" alt="" class="w-[25px] h-[25px]">
+        <div class="">
+          <h1 class="font-[400]  font-pop text-[12px] text-blanct">Step 1: Product design Research</h1>
+          <h4 class="font-[400] mt-2 font-pop text-[9px] w-[259px] text-blanct">This initial step involves a systematic
+            and thorough exploration of the market landscape, user needs, and existing solutions.</h4>
+          <button class="bg-gradient-to-r from-jaune to-violet  mt-4 rounded-[44px] p-[0.09rem] z-1">
+
+            <div class=" flex  w-[83px]  justify-center items-center h-[22px] rounded-[44px] border-1  z-2 bg-black">
+              <h1 class="font-[400] text-[9px] font-pop  text-blanct">See Examples</h1>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-6">
+      <div class=" flex justify-center items-center w-[25px] h-[25px] rounded-full border-2 border-blanc">
+        <h1 class="text-blanct text-sm">2</h1>
+      </div>
+      <div class="flex flex-col gap-4">
+        <img src="./assets/img/cercle2.svg" alt="" class="w-[25px] h-[25px]">
+        <div class="">
+          <h1 class="font-[400]  font-pop text-[12px] text-blanct">Step 2: UI design in figma</h1>
+          <h4 class="font-[400] mt-2 font-pop text-[9px] w-[259px] text-blanct">This initial step involves a systematic
+            and thorough exploration of the market landscape, user needs, and existing solutions.</h4>
+          <button class="bg-gradient-to-r from-jaune to-violet  mt-4 rounded-[44px] p-[0.09rem] z-1">
+
+            <div class=" flex  w-[83px]  justify-center items-center h-[22px] rounded-[44px] border-1  z-2 bg-black">
+              <h1 class="font-[400] text-[9px] font-pop  text-blanct">See Examples</h1>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-6">
+      <div class=" flex justify-center items-center w-[25px] h-[25px] rounded-full border-2 border-blanc">
+        <h1 class="text-blanct text-sm">3</h1>
+      </div>
+      <div class="flex flex-col gap-4">
+        <img src="./assets/img/cercle3.svg" alt="" class="w-[25px] h-[25px]">
+        <div class="">
+          <h1 class="font-[400]  font-pop text-[12px] text-blanct">Step 1: No-code develop in webflow</h1>
+          <h4 class="font-[400] mt-2 font-pop text-[9px] w-[259px] text-blanct">This initial step involves a systematic
+            and thorough exploration of the market landscape, user needs, and existing solutions.</h4>
+          <button class="bg-gradient-to-r from-jaune to-violet  mt-4 rounded-[44px] p-[0.09rem] z-1">
+
+            <div class=" flex  w-[83px]  justify-center items-center h-[22px] rounded-[44px] border-1  z-2 bg-black">
+              <h1 class="font-[400] text-[9px] font-pop  text-blanct">See Examples</h1>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section4 -->
+
+  <section class="flex flex-col gap-12 m-4 mt-12">
+    <div class="flex gap-4  mt-6 h-[35px] md:h-[57px] ">
+      <h1 class="font-[400] font-pop text-[18px] text-blanct md:text-[40px]">Some featured projects</h1>
+      <img src="./assets/img/flocons.svg">
+    </div>
+
+    <div class="flex flex-col gap-8">
+      <div class="w-[329px] h-[316px] bg-gradient-to-r from-violet to-jaune  ">
+
+      </div>
+      <!-- ..... -->
+      <div class=" hidden md:block bg-gradient-to-r from-jaune to-violet rounded-[290px] p-[0.09rem] z-1">
+
+        <div
+          class="  hidden md:block  md:flex justify-between w-[428px] p-6  items-center h-[48px] rounded-[290px] border-1  z-2 bg-black">
+          <div class="  W-[20px] h-[20px] bg-noirn">
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+
+</html>
