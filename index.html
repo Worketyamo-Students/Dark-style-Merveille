@@ -20,11 +20,14 @@
              --color-noirn: #1C1C1C; 
              --color-blanc: #FAFAFA;  
              --color-gris: #878787;
-             --color-blanct: #FFFFFF;   
+             --color-blanct: #FFFFFF;  
+             --color-table: #FFFFFF33; 
         }  
         </style>
   <style>
-
+    .clip-pacman {
+      clip-path: polygon(100% 50%, 50% 30%, 50% 70%);
+    }
   </style>
 </head>
 
@@ -34,17 +37,18 @@
       <img src="./assets/img/logo.svg" alt="" class="w-[33px] h-[33px]">
       <h1 class="font-400 text-pop text-[18.12px] text-blanct">znisa</h1>
     </div>
-    <div class=" md:hidden flex    rounded-full p-[0.09rem] bg-gradient-to-r from-jaune to-violet -z-1 ">
+    <div
+      class=" md:hidden flex   items-center justify-center  rounded-full p-[0.12rem] bg-gradient-to-r from-jaune to-violet z-1 ">
 
       <div class="border-1  bg-noirn z-2 rounded-full w-[48px] h-[32px] ">
         <img src="./assets/img/menu.svg" alt="" class="  w-[40px] h-[32px] object-cover">
       </div>
     </div>
     <!-- desktop -->
-    <div class=" hidden md:block bg-gradient-to-r from-jaune to-violet rounded-[290px] p-[0.09rem] z-1">
+    <div class=" hidden md:block  w-[428px]    flex justify-center items-center bg-gradient-to-r from-jaune to-violet rounded-[290px] p-[0.09rem] z-1">
 
       <div
-        class="  hidden md:block  md:flex justify-between w-[428px] p-6  items-center h-[48px] rounded-[290px] border-1  z-2 bg-black">
+        class=" flex hidden md:block  md:flex justify-between w-[425px] p-6 mt-[0.09rem] items-center h-[48px] rounded-[290px] border-1  z-2 bg-black">
         <div class="  W-[20px] h-[20px] bg-noirn">
           <img src="./assets/img/Home Icom.svg" alt="" class="">
         </div>
@@ -56,96 +60,91 @@
 
     <div class=" hidden md:block md:flex  gap-[0.5px]">
       <div
-        class=" flex w-[103px] h-[52px]  border-1 border-jaune   justify-center items-center bg-gradient-to-r from-violet to-jaune rounded-[40px]">
-        <h1>Hire me</h1>
+        class="  flex   items-center justify-center  rounded-full p-[0.12rem] bg-gradient-to-r from-jaune to-violet z-1 ">
+        <div
+          class=" flex w-[103px] h-[52px]     justify-center items-center bg-gradient-to-r from-violet to-jaune rounded-[40px]">
+          <h1>Hire me</h1>
+        </div>
       </div>
-
+      <div class=" flex   items-center justify-center  rounded-full p-[0.001rem] bg-gradient-to-r from-jaune to-violet z-1 ">
       <div
-        class=" flex w-[49px] h-[49px]  border-1  border-jaune justify-center items-center bg-gradient-to-r from-violet to-jaune rounded-full">
+        class=" flex w-[49px] h-[49px]   justify-center items-center bg-gradient-to-r from-violet to-jaune rounded-full z-2">
         <img src="./assets/img/user.svg" alt="" class="w-[30px] h-[30px] object-cover">
+      </div>
       </div>
     </div>
   </header>
-
-  <!-- <table class="table-auto w-full border-2 mt-32 border-white">
-    <tbody>
-      <tr>
-        <!-- Première cellule 
-        <td class="border border-white px-4 py-2">Cellule 1</td>
-  
-        <!-- Deuxième cellule divisée en 4 petites cellules 
-        <td class="border border-white px-4 py-2">
-          <div class="grid grid-cols-4 gap-0">
-            <div class="border border-white px-3 py-2">Cellule 2.1</div>
-            <div class="border border-white px-3 py-2">Cellule 2.2</div>
-            <div class="border border-white px-3 py-2">Cellule 2.3</div>
-            <div class="border border-white px-3 py-2">Cellule 2.4</div>
-          </div>
-        </td>
-  
-        <!-- Troisième cellule 
-        <td class="border border-white px-4 py-2">Cellule 3</td>
-      </tr>
-    </tbody>
-  </table>
-<!-- 
-  <table class="mt-16">
-    <tr>
-      <td class="border border-white px-4 py-2">cellule10</td>
-      <td class="border border-white px-0.1 py-2" >cellule10</td>
-      <td class="border border-white px-0.1 py-2">cellule10</td>
-      <td class="border border-white px-0.1 py-2">cellule10</td>
-      <td class="border border-white px-0.1 py-2" >cellule10</td>
-      <td class="border border-white px-4 py-2">cellule10</td>
-      
-    
-    
-    </tr> 
-    </table>
-  <table class="table-auto min-w-full border-2  border-white">
-    
-    <tbody>
-      <!-- Ligne 1 
-      <tr>
-        <td class="border border-white px-4 py-2">Cellule 1</td>
-        <td class="border border-white px-4 py-2" rowspan="3"><h1 class="text-xl text-white">shj</h1></td>
-        <td class="border border-white px-4 py-2">Cellule 3</td>
-      </tr>
-      <!-- Ligne 2 
-      <tr>
-        <td class="border border-white px-4 py-2">Cellule 4</td>
-        <td class="border border-white px-4 py-2">Cellule 5</td>
-      </tr>
-      <!-- Ligne 3 
-      <tr>
-        <td class="border border-white px-4 py-2">Cellule 6</td>
-        <td class="border border-white px-4 py-2">Cellule 7</td>
-      </tr>
-    
-    </tbody>
-    <tr>
-      <td class="border border-white px-4 py-2">cellule10</td>
-      <td class="border border-white px-4 py-2" >cellule10</td>
-      <td class="border border-white px-4 py-2">cellule10</td>
+<!-- ....section1 -->
+<section class="mt-20 z-1">
+  <div class="flex flex-col lg:mx-40 h-[305px] lg:h-[565px] bg-blanct">
+      <div class="flex flex-1">
+          <div class="flex-1 border-[0.1px] border-table hidden lg:block bg-page"></div>
+          <div class="flex-1 border-[0.1px] border-table bg-page rounded-br-xl lg:rounded-none"></div>
+          <div class="flex-1 border-[0.1px] border-table bg-page rounded-bl-xl lg:rounded-none"></div>
+          <div class="flex-1 border-[0.1px] border-table bg-page"></div>
+          <div class="flex-1 border-[0.1px] border-table bg-page lg:rounded-br-3xl"></div>
+          <div class="flex-1 border-[0.1px] border-table hidden lg:rounded-bl-3xl lg:block bg-page"></div>
+      </div>
      
-    </tr>
-    <tr>
-      <td class="border border-white px-4 py-2">cellule10</td>
-      <td class="border border-white px-4 py-2" >cellule10</td>
-      <td class="border border-white px-4 py-2">cellule10</td>
-
-    </tr>
-    <tr>
-      <td class="border border-white px-4 py-2">cellule10</td>
-      <td class="border border-white px-4 py-2" >cellule10</td>
-      <td class="border border-white px-4 py-2">cellule10</td>
-      
-    </tr>
-  </table>
-   -->
-  <!-- section3 -->
-  <section class=" flex flex-col mt-16   md:mt-32 gap-2 ">
-    <hr class="w-full h-0.5 bg-white ">
+      <div class="flex flex-1 lg:hidden">
+          <div class="flex-1 border-[0.1px] border-table hidden lg:block"></div>
+          <div class="flex-1 border-table bg-page rounded-tr-xl lg:rounded-none"></div>
+          <div class="flex-1 border-table bg-page rounded-tl-xl lg:rounded-none"></div>
+          <div class="flex-1 border-table bg-page"></div>
+          <div class="flex-1 border-table bg-page"></div>
+          <div class="flex-1 border-table hidden lg:block"></div>
+      </div>
+      <div class="flex-3 flex flex-col items-center justify-between lg:flex lg:flex-row bg-page lg:bg-blanct">
+          <h1 class="lg:hidden md:text-xl text-blanct">I design and build clean websites</h1>
+          <p class="text-[9px] md:text-xs text-center w-2/3 lg:hidden text-blanct">Write anything here something about yourself to showcase what actually you doing or targeting etc.</p>
+          <div class="bg-gradient-to-r from-jaune to-violet w-[62px] md:w-[80px] h-[22px] md:h-[25px] rounded-[40px] p-[1px] lg:hidden"><button class="hover:cursor-pointer bg-gradient-to-r from-violet to-jaune w-full rounded-[40px] h-full flex items-center justify-center text-page text-[9px] md:text-xs font-medium">Hire me</button></div>
+          <div class="hidden lg:block lg:flex-1 h-full lg:flex lg:flex-col bg-page">
+              <div class="flex-1 border-[0.1px] border-table"></div>
+              <div class="flex-1 border-[0.1px] border-table"></div>
+              <div class="flex-1 border-[0.1px] border-table"></div>
+          </div>
+          <div class="hidden lg:block lg:flex-4 bg-page border-[0.1px] border-table h-full lg:rounded-tr-3xl lg:flex lg:flex-col items-center justify-center gap-4">
+              <h1 class="text-[32px] text-blanct">I design and build clean websites</h1>
+              <p class="text-center  text-blanct w-2/3">Write anything here something about yourself to showcase what actually you doing or targeting etc.</p>
+              <div class="bg-gradient-to-r from-rose to-bleu w-[115px] h-[40px] rounded-[40px] p-[1px]"><button class="hover:cursor-pointer bg-gradient-to-r from-violet to-jaune w-full rounded-[40px] h-full flex items-center justify-center text-blanct font-medium">Hire me</button></div>
+          </div>
+          <div class="hidden lg:block lg:flex-1 boder lg:flex lg:flex-col h-full bg-noirn lg:rounded-tl-3xl">
+              <div class="flex-1 border-[0.1px] border-table lg:rounded-tl-xl"></div>
+              <div class="flex-1 border-[0.1px] border-table"></div>
+              <div class="flex-1 border-[0.1px] border-table"></div>
+          </div>
+      </div>
+     <div class="flex flex-1">
+          <div class="flex-1 border-[0.1px] border-table bg-page hidden lg:block"></div>
+          <div class="flex-1 border-r-[0.1px] border-table bg-page"></div>
+          <div class="flex-1 lg:border-r-[0.1px] border-table bg-page"></div>
+          <div class="flex-1 border-table rounded-br-xl lg:rounded-none bg-page"></div>
+<div class="flex-1 border-l-[0.1px] border-table rounded-bl-xl lg:rounded-none bg-page"></div>
+          <div class="flex-1 border-[0.1px] border-table hidden lg:block bg-page"></div>
+      </div> 
+      <div class="flex flex-1">
+          <div class="flex-1 border-[0.1px] border-table hidden lg:block bg-page"></div>
+          <div class="flex-1 border-[0.1px] border-table bg-page"></div>
+          <div class="flex-1 border-[0.1px] border-table bg-page"></div>
+          <div class="flex-1 border-[0.1px] border-table rounded-tr-xl lg:rounded-none bg-page"></div>
+          <div class="flex-1 border-[0.1px] border-table rounded-tl-xl lg:rounded-none bg-page"></div>
+          <div class="flex-1 border-[0.1px] border-table hidden lg:block bg-page"></div>
+      </div>
+     
+      <div class="flex flex-1 bg-page">
+          <div class="flex-1 border-[0.1px] border-table hidden lg:block"></div>
+          <div class="flex-1 border-[0.1px] border-table"></div>
+          <div class="flex-1 border-[0.1px] border-table"></div>
+          <div class="flex-1 border-[0.1px] border-table"></div>
+          <div class="flex-1 border-[0.1px] border-table"></div>
+          <div class="flex-1 border-[0.1px] border-table hidden md:block"></div>
+      </div>
+  </div>
+  <img src="assets/img/neige.svg" alt="" class="  hidden md:block ml-37 w-[28px] -mt-64 h-[28px] object-cover z-2">
+ 
+  <!-- section2 -->
+  <section class=" flex flex-col md:mt-57 gap-2 ">
+    <hr class="w-full h-0.5 bg-table ">
     <div class="flex justify-between md:ml-28 md:mr-28  m-2">
       <h1 class="text-[14px]  md:text-[20px] font-[400] text-blanct font-pop">Framer</h1>
       <img src="./assets/img/etoile.svg" alt="">
@@ -156,45 +155,54 @@
       <h1 class=" hidden md:block text-[20px] font-[400] font-pop text-blanct">Notion</h1>
       <img src="./assets/img/etoile.svg" alt="" class="hidden md:block">
     </div>
-    <hr class="w-full h-0.5 bg-white ">
+    <hr class="w-full h-0.5 bg-table ">
 
   </section>
-  <!-- section4 -->
-  <section class=" flex flex-col ml-6 md:m-24 gap-6 md:gap-24">
+  <!-- section3 -->
+  <section class=" flex flex-col ml-6 md:m-24 gap-12 md:gap-16">
     <div class="flex gap-4  mt-6 h-[35px] md:h-[57px] ">
       <h1 class="font-[400] font-pop text-[18px] text-blanct md:text-[40px]">My process to design</h1>
       <img src="./assets/img/flocons.svg">
     </div>
 
     <div class="flex gap-6 md:gap-32">
-      <div class=" flex justify-center items-center  md:w-[56px] md:w-[56px] w-[25px] h-[25px] rounded-full border-2 border-blanc">
+    
+      <div
+        class=" flex justify-center items-center  md:w-[56px] w-[25px] md:h-[56px] h-[25px] rounded-full border-2 border-blanc">
         <h1 class="text-blanct text-sm">1</h1>
       </div>
+      
       <div class="flex flex-col gap-4">
+        <!-- <div class="w-[25px h-[25px] md:w-[56px] md:h-[56px]  bg-gradient-to-r from-jaune to-violet rounded-full relative clip-pacman"></div> -->
         <img src="./assets/img/cercle.svg" alt="" class="w-[25px] h-[25px] md:w-[56px] md:h-[56px]">
         <div class="">
           <h1 class="font-[400]  font-pop text-[12px] md:text-[22px] text-blanct">Step 1: Product design Research</h1>
-          <h4 class="font-[400] mt-2 font-pop text-[9px] w-[259px] md:text-[19px] md:w-[595px] text-blanct">This initial step involves a systematic
+          <h4 class="font-[400] mt-2 font-pop text-[9px] w-[259px] md:text-[19px] md:w-[595px] text-blanct">This initial
+            step involves a systematic
             and thorough exploration of the market landscape, user needs, and existing solutions.</h4>
-          <button class="bg-gradient-to-r from-jaune to-violet  mt-4 rounded-[44px] p-[0.09rem] z-1">
+          <button
+            class="flex items-center justify-center bg-gradient-to-r from-jaune to-violet  mt-4 rounded-[44px] p-[0.001rem] z-1">
 
-            <div class=" flex  w-[83px]  justify-center items-center h-[22px] md:w-[177px] md:h-[49px] rounded-[44px] border-1  z-2 bg-black">
+            <div
+              class="flex  w-[83px]  justify-center items-center  m-[1px] h-[22px] md:w-[177px] md:h-[49px] rounded-[44px]  border-1  z-2 bg-black">
               <h1 class="font-[400] text-[9px] md:text-[18px] font-pop  text-blanct">See Examples</h1>
             </div>
           </button>
         </div>
       </div>
     </div>
-
-    <div class="flex gap-6 md:gap-32">
-      <div class=" flex justify-center items-center md:w-[56px] md:w-[56px] w-[25px] h-[25px] rounded-full border-2 border-blanc">
+<div class=" hidden md:block h-82 w-0.5 -mt-60 ml-6 border-1 border-blanct bg-blanct"></div>
+    <div class="flex gap-6 md:gap-32 md:-mt-12">
+      <div
+        class=" flex justify-center items-center md:w-[56px] md:h-[56px] w-[25px] h-[25px] rounded-full border-2 border-blanc">
         <h1 class="text-blanct text-sm">2</h1>
       </div>
       <div class="flex flex-col gap-4">
         <img src="./assets/img/cercle2.svg" alt="" class="w-[25px] h-[25px] md:w-[56px] md:h-[56px]">
         <div class="">
           <h1 class="font-[400]  font-pop text-[12px] md:text-[22px] text-blanct">Step 2: UI design in figma</h1>
-          <h4 class="font-[400] mt-2 font-pop text-[9px] w-[259px]  md:text-[19px] md:w-[595px] text-blanct">This initial step involves a systematic
+          <h4 class="font-[400] mt-2 font-pop text-[9px] w-[259px]  md:text-[19px] md:w-[595px] text-blanct">This
+            initial step involves a systematic
             and thorough exploration of the market landscape, user needs, and existing solutions.</h4>
           <!-- <button class="bg-gradient-to-r from-jaune to-violet  mt-4 rounded-[44px] p-[0.09rem] z-1">
 
@@ -205,16 +213,19 @@
         </div>
       </div>
     </div>
-
-    <div class="flex gap-6 md:gap-32">
-      <div class=" flex justify-center items-center w-[25px] h-[25px] md:w-[56px] md:w-[56px] rounded-full border-2 border-blanc">
+    <div class="hidden md:block h-64 w-0.5 -mt-44 ml-6 border-1 border-blanct bg-blanct"></div>
+    <div class="flex gap-6 md:-mt-12 md:gap-32">
+      <div
+        class=" flex justify-center items-center w-[25px] h-[25px] md:w-[56px] md:h-[56px] rounded-full border-2 border-blanc">
         <h1 class="text-blanct text-sm">3</h1>
       </div>
       <div class="flex flex-col gap-4">
         <img src="./assets/img/cercle3.svg" alt="" class="w-[25px] h-[25px] md:w-[56px] md:h-[56px]">
         <div class="">
-          <h1 class="font-[400]  font-pop text-[12px]  md:text-[22px] text-blanct">Step 1: No-code develop in webflow</h1>
-          <h4 class="font-[400] mt-2 font-pop text-[9px] md:text-[19px] md:w-[595px] w-[259px] text-blanct">This initial step involves a systematic
+          <h1 class="font-[400]  font-pop text-[12px]  md:text-[22px] text-blanct">Step 1: No-code develop in webflow
+          </h1>
+          <h4 class="font-[400] mt-2 font-pop text-[9px] md:text-[19px] md:w-[595px] w-[259px] text-blanct">This initial
+            step involves a systematic
             and thorough exploration of the market landscape, user needs, and existing solutions.</h4>
           <!-- <button class="bg-gradient-to-r from-jaune to-violet  mt-4 rounded-[44px] p-[0.09rem] z-1">
 
@@ -269,7 +280,7 @@
 
             <div class=" bg-gradient-to-r from-jaune to-violet  w-[50px] h-[52px] rounded-full p-[0.01rem] z-1">
               <div
-                class=" flex  justify-center md:flex justify-between w-[30px] p-6  items-center h-[30px] rounded-full border-1  z-2 bg-noirn">
+                class=" flex  justify-center md:flex justify-between w-[30px]   p-[1.54rem] -mt-[0.78px] -ml-[0.9px]  items-center  md:h-[32px] h-[30px] rounded-full border-1  z-2 bg-noirn">
                 <!-- <div class="  W-[20px] h-[20px] bg-noirn"> -->
                 <h1 class="text-blanct text-sm">2</h1>
                 <!-- </div> -->
@@ -295,7 +306,7 @@
             <div
               class=" flex flex-col gap-4 bg-gradient-to-r from-jaune to-violet  w-[50px] h-[52px] rounded-full p-[0.01rem] z-1">
               <div
-                class=" flex justify-center md:flex justify-between w-[30px] p-6  items-center h-[30px] rounded-full border-1  z-2 bg-black">
+                class=" flex justify-center md:flex justify-between w-[30px] p-[1.54rem]  -mt-[0.78px] -ml-[0.9px]  items-center h-[30px] rounded-full border-1  z-2 bg-black">
                 <!-- <div class="  W-[20px] h-[20px] bg-noirn"> -->
                 <h1 class="text-blanct text-sm ">3</h1>
                 <!-- </div> -->
@@ -335,7 +346,8 @@
               </div>
               <img src="./assets/img/cotes.svg" alt="" class="w-[35.62px] h-[25.68px] object-cover">
             </div>
-            <h1 class="w-[278px] h-51px text-[12.8px] md:w-[320px] text-[14px] text-blanct font-[400]">s simply dummy text of the printing and
+            <h1 class="w-[278px] h-51px text-[12.8px] md:w-[320px] text-[14px] text-blanct font-[400]">s simply dummy
+              text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </h1>
           </div>
         </div>
@@ -359,7 +371,8 @@
               </div>
               <img src="./assets/img/cotes.svg" alt="" class="w-[35.62px] h-[25.68px] object-cover">
             </div>
-            <h1 class="w-[278px] md:w-[320px] h-51px text-[12.8px] md:text-[14px] text-blanct font-[400]">s simply dummy text of the printing and
+            <h1 class="w-[278px] md:w-[320px] h-51px text-[12.8px] md:text-[14px] text-blanct font-[400]">s simply dummy
+              text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </h1>
           </div>
         </div>
@@ -383,7 +396,8 @@
               </div>
               <img src="./assets/img/cotes.svg" alt="" class="w-[35.62px] h-[25.68px] object-cover">
             </div>
-            <h1 class="w-[278px]  md:w-[320px] h-51px text-[12.8px] md:text-[14px] text-blanct font-[400]">s simply dummy text of the printing and
+            <h1 class="w-[278px]  md:w-[320px] h-51px text-[12.8px] md:text-[14px] text-blanct font-[400]">s simply
+              dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </h1>
           </div>
         </div>
@@ -405,7 +419,8 @@
               </div>
               <img src="./assets/img/cotes.svg" alt="" class="w-[35.62px] h-[25.68px] object-cover">
             </div>
-            <h1 class="w-[278px] md:w-[320px] h-51px text-[12.8px] md:text-[14px] text-blanct font-[400]">s simply dummy text of the printing and
+            <h1 class="w-[278px] md:w-[320px] h-51px text-[12.8px] md:text-[14px] text-blanct font-[400]">s simply dummy
+              text of the printing and
               typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </h1>
           </div>
         </div>
@@ -419,26 +434,31 @@
       <h1 class="font-[400] font-pop text-[18px] text-blanct md:text-[40px]">Have idea about project?</h1>
       <img src="./assets/img/flocons.svg" alt="">
     </div>
-    <h1 class="w-[321px] h-[28px] text-[9.5px] md:text-[16px] font-pop text-blanct font-[400]">Write anything here something about
+    <h1 class="w-[321px] h-[28px] text-[9.5px] md:text-[16px] font-pop text-blanct font-[400]">Write anything here
+      something about
       yourself to
       showcase what actually you doing or targeting etc.</h1>
-    <div
-      class="flex justify-center items-center w-[112px] h-[25px]  md:w-[190px] md:h-[43px] rounded-[39.3px]  bg-gradient-to-r from-violet to-jaune">
-      <h1 class="text-[10px] md:text-[16px] font-[500]  text-black font-pop">Send us a message</h1>
-    </div>
+      <div
+      class=" flex items-center justify-center bg-gradient-to-r from-jaune to-violet   w-[110px] h-[24px]  md:w-[191px] md:h-[44px] rounded-[39.3px] p-[0.01rem] z-1">
+
+        <h1 class="text-[10px] text-center md:p-2.5  md:text-[16px]  w-[108px] h-[22px] p-1 md:w-[190px] md:h-[43px] font-[500]  rounded-[39.3px] bg-gradient-to-r from-violet to-jaune text-black font-pop z-2">Send us a message</h1>
+      </div>
+    
   </section>
   <!-- section7 -->
-  <section class=" flex  flex-col  gap-12  mt-12 md:justify-between md:ml-96 md:mr-48 md:mt-36 md:flex-row items-center justify-center ">
+  <footer
+    class=" flex  flex-col  gap-12 mb-96 mt-12 md:justify-between md:ml-96 md:mr-48 md:mt-36 md:mb-32 md:flex-row items-center justify-center ">
 
     <div class="flex gap-[7.55px] -ml-48 mb-8 hidden md:block">
       <img src="./assets/img/logo.svg" alt="" class="w-[33px] h-[33px]">
       <h1 class="font-400 text-pop text-[18.12px] text-blanct">znisa</h1>
     </div>
 
-    <div class="  bg-gradient-to-r from-jaune  w-[280px] to-violet h-[54px] rounded-[290px] p-[0.09rem] z-1">
+    <div
+      class=" flex items-center justify-center bg-gradient-to-r from-jaune to-violet  w-[279px] h-[38px] rounded-[290px] p-[0.01rem] z-1">
 
       <div
-        class="flex  md:flex justify-between w-[278px] p-6  items-center h-[38px] rounded-[290px] border-1  z-2 bg-black">
+        class="flex  md:flex justify-between w-[276.5px] p-3  items-center h-[36px] rounded-[290px] border-1  z-2 bg-noirn">
         <div class="  W-[20px] h-[20px] bg-noirn">
           <img src="./assets/img/x.svg" alt="" class="">
         </div>
@@ -471,10 +491,10 @@
         <img src="./assets/img/user.svg" alt="" class="w-[30px] h-[30px] object-cover">
       </div>
     </div>
-  
 
-  </section>
-  
+
+  </footer>
+
 
 </body>
 
